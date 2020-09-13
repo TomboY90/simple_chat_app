@@ -1,6 +1,10 @@
 apply plugin: "com.android.application"
 
+// add for firebase
+apply plugin: 'com.google.gms.google-services'
+
 import com.android.build.OutputFile
+
 
 /**
  * The react.gradle file registers a task for each build variant (e.g. bundleDebugJsAndAssets
@@ -186,6 +190,9 @@ dependencies {
     implementation "com.facebook.react:react-native:+"  // From node_modules
 
     implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.0.0"
+
+    // add for firebase
+    implementation 'com.google.firebase:firebase-analytics:17.5.0'
 
     debugImplementation("com.facebook.flipper:flipper:${FLIPPER_VERSION}") {
       exclude group:'com.facebook.fbjni'
