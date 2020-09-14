@@ -18,11 +18,6 @@ export default function HomeScreen({navigation}) {
         title="Logout"
         onPress={() => logout()}
       />
-      <FormButton
-        modeValue="contained"
-        title="Add Room"
-        onPress={() => navigation.navigate('AddRoom')}
-      />
     </View>
   );
 }
